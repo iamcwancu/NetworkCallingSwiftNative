@@ -8,5 +8,7 @@
 import Foundation
 
 struct HomeConstants {
-    
+    struct Cell {
+        static let home = "HomeTableViewCell"
+    }
 }

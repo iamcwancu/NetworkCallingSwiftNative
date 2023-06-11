@@ -25,7 +25,7 @@ struct HttpNetworkResponse {
         }
     }
 }
-/// Unwrap the dataTask completion data
+/// Unwrap the dataTask completion data response
 struct Unwrapped {
     static func response(_ data: Data?,
                          _ response: URLResponse?,

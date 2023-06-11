@@ -1,5 +1,5 @@
 //
-//  ProductModel.swift
+//  HomeModel.swift
 //  NetworkCallingNativeWay
 //
 //  Created by Shivanshu Verma on 21/05/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProductModel: Codable {
+struct HomeModel: Codable {
     var id: Int?
     var title: String?
     var price: Double?

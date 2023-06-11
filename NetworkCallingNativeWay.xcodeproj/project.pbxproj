@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1017F8712A1B27C30071D9B1 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017F8702A1B27C30071D9B1 /* ResponseData.swift */; };
+		10B380DE2A3406F900A4EC8F /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B380DD2A3406F900A4EC8F /* NetworkLogger.swift */; };
+		10CAAFD32A3580A500161AD7 /* URLSession+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAAFD22A3580A500161AD7 /* URLSession+Addition.swift */; };
 		10E792292A1A631E00DA447A /* ResponseHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E792282A1A631E00DA447A /* ResponseHandlers.swift */; };
+		10F051642A3486F00053E0FF /* UIImageView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F051632A3486F00053E0FF /* UIImageView+Addition.swift */; };
+		10F4ABDD2A3464EA0008D051 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4ABDC2A3464EA0008D051 /* Connection.swift */; };
+		10F4ABE12A3470380008D051 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4ABDF2A3470380008D051 /* HomeTableViewCell.swift */; };
+		10F4ABE22A3470380008D051 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F4ABE02A3470380008D051 /* HomeTableViewCell.xib */; };
 		10FF319A2A19E519001DF42C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF31992A19E519001DF42C /* AppDelegate.swift */; };
 		10FF319C2A19E519001DF42C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF319B2A19E519001DF42C /* SceneDelegate.swift */; };
 		10FF319E2A19E519001DF42C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF319D2A19E519001DF42C /* ViewController.swift */; };
@@ -29,12 +35,19 @@
 		10FF31DC2A1A00FC001DF42C /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF31DB2A1A00FC001DF42C /* ParameterEncoder.swift */; };
 		10FF31DE2A1A2622001DF42C /* UrlRequestConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF31DD2A1A2622001DF42C /* UrlRequestConfigure.swift */; };
 		10FF31E02A1A2F9D001DF42C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF31DF2A1A2F9D001DF42C /* HomeViewModel.swift */; };
-		10FF31E22A1A3067001DF42C /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF31E12A1A3067001DF42C /* ProductModel.swift */; };
+		10FF31E22A1A3067001DF42C /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF31E12A1A3067001DF42C /* HomeModel.swift */; };
+		53D3547F3722C262C1BE2D43 /* Pods_NetworkCallingNativeWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861CCA417C6422306FC878FA /* Pods_NetworkCallingNativeWay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1017F8702A1B27C30071D9B1 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		10B380DD2A3406F900A4EC8F /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		10CAAFD22A3580A500161AD7 /* URLSession+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Addition.swift"; sourceTree = "<group>"; };
 		10E792282A1A631E00DA447A /* ResponseHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandlers.swift; sourceTree = "<group>"; };
+		10F051632A3486F00053E0FF /* UIImageView+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Addition.swift"; sourceTree = "<group>"; };
+		10F4ABDC2A3464EA0008D051 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		10F4ABDF2A3470380008D051 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		10F4ABE02A3470380008D051 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		10FF31962A19E519001DF42C /* NetworkCallingNativeWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkCallingNativeWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FF31992A19E519001DF42C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10FF319B2A19E519001DF42C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +70,10 @@
 		10FF31DB2A1A00FC001DF42C /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
 		10FF31DD2A1A2622001DF42C /* UrlRequestConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestConfigure.swift; sourceTree = "<group>"; };
 		10FF31DF2A1A2F9D001DF42C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		10FF31E12A1A3067001DF42C /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		10FF31E12A1A3067001DF42C /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		20EC29684F8D9DF369C061C7 /* Pods-NetworkCallingNativeWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCallingNativeWay.debug.xcconfig"; path = "Target Support Files/Pods-NetworkCallingNativeWay/Pods-NetworkCallingNativeWay.debug.xcconfig"; sourceTree = "<group>"; };
+		861CCA417C6422306FC878FA /* Pods_NetworkCallingNativeWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkCallingNativeWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C678427032C64ADEE9E714 /* Pods-NetworkCallingNativeWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCallingNativeWay.release.xcconfig"; path = "Target Support Files/Pods-NetworkCallingNativeWay/Pods-NetworkCallingNativeWay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D3547F3722C262C1BE2D43 /* Pods_NetworkCallingNativeWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10F4ABDE2A3470140008D051 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				10F4ABDF2A3470380008D051 /* HomeTableViewCell.swift */,
+				10F4ABE02A3470380008D051 /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		10FF318D2A19E519001DF42C = {
 			isa = PBXGroup;
 			children = (
 				10FF31982A19E519001DF42C /* NetworkCallingNativeWay */,
 				10FF31972A19E519001DF42C /* Products */,
+				F7E1C0F100C2134107FE5C40 /* Pods */,
+				332FA4010E945497C51A9140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +138,7 @@
 			children = (
 				10FF31CA2A19F4E4001DF42C /* String+Addition.swift */,
 				10FF31CC2A19F505001DF42C /* UIViewController+Addition.swift */,
+				10F051632A3486F00053E0FF /* UIImageView+Addition.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,10 +164,13 @@
 				10FF31CF2A19F52A001DF42C /* Decoder */,
 				10FF31CE2A19F528001DF42C /* Encoding */,
 				10FF31D02A19F54C001DF42C /* NetworkManager.swift */,
+				10CAAFD22A3580A500161AD7 /* URLSession+Addition.swift */,
 				10FF31DD2A1A2622001DF42C /* UrlRequestConfigure.swift */,
 				10E792282A1A631E00DA447A /* ResponseHandlers.swift */,
 				10FF31D22A19F5A3001DF42C /* HTTPMethod.swift */,
 				10FF31D42A19F94F001DF42C /* NetworkError.swift */,
+				10B380DD2A3406F900A4EC8F /* NetworkLogger.swift */,
+				10F4ABDC2A3464EA0008D051 /* Connection.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -164,6 +196,7 @@
 		10FF31B32A19E6F7001DF42C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				10F4ABDE2A3470140008D051 /* Cell */,
 				10FF31B62A19E717001DF42C /* View */,
 				10FF31B52A19E713001DF42C /* Model */,
 				10FF31B42A19E711001DF42C /* ViewModel */,
@@ -183,7 +216,7 @@
 		10FF31B52A19E713001DF42C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				10FF31E12A1A3067001DF42C /* ProductModel.swift */,
+				10FF31E12A1A3067001DF42C /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,6 +263,23 @@
 			path = URLEncoder;
 			sourceTree = "<group>";
 		};
+		332FA4010E945497C51A9140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				861CCA417C6422306FC878FA /* Pods_NetworkCallingNativeWay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7E1C0F100C2134107FE5C40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20EC29684F8D9DF369C061C7 /* Pods-NetworkCallingNativeWay.debug.xcconfig */,
+				E7C678427032C64ADEE9E714 /* Pods-NetworkCallingNativeWay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10FF31AA2A19E519001DF42C /* Build configuration list for PBXNativeTarget "NetworkCallingNativeWay" */;
 			buildPhases = (
+				9105B39879A02F3DEFE0F766 /* [CP] Check Pods Manifest.lock */,
 				10FF31922A19E519001DF42C /* Sources */,
 				10FF31932A19E519001DF42C /* Frameworks */,
 				10FF31942A19E519001DF42C /* Resources */,
+				E1D4124683A20B6B71FCCC33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,17 +343,61 @@
 				10FF31A62A19E519001DF42C /* LaunchScreen.storyboard in Resources */,
 				10FF31A32A19E519001DF42C /* Assets.xcassets in Resources */,
 				10FF31A12A19E519001DF42C /* Main.storyboard in Resources */,
+				10F4ABE22A3470380008D051 /* HomeTableViewCell.xib in Resources */,
 				10FF31C62A19ED28001DF42C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9105B39879A02F3DEFE0F766 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkCallingNativeWay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D4124683A20B6B71FCCC33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkCallingNativeWay/Pods-NetworkCallingNativeWay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkCallingNativeWay/Pods-NetworkCallingNativeWay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkCallingNativeWay/Pods-NetworkCallingNativeWay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10FF31922A19E519001DF42C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B380DE2A3406F900A4EC8F /* NetworkLogger.swift in Sources */,
 				10FF31E02A1A2F9D001DF42C /* HomeViewModel.swift in Sources */,
 				10FF31DE2A1A2622001DF42C /* UrlRequestConfigure.swift in Sources */,
 				10FF31BC2A19E834001DF42C /* Utility.swift in Sources */,
@@ -312,15 +408,19 @@
 				10FF319E2A19E519001DF42C /* ViewController.swift in Sources */,
 				10E792292A1A631E00DA447A /* ResponseHandlers.swift in Sources */,
 				10FF319A2A19E519001DF42C /* AppDelegate.swift in Sources */,
+				10F051642A3486F00053E0FF /* UIImageView+Addition.swift in Sources */,
 				10FF319C2A19E519001DF42C /* SceneDelegate.swift in Sources */,
 				10FF31C92A19F49A001DF42C /* HomeConstants.swift in Sources */,
 				10FF31CB2A19F4E4001DF42C /* String+Addition.swift in Sources */,
-				10FF31E22A1A3067001DF42C /* ProductModel.swift in Sources */,
+				10FF31E22A1A3067001DF42C /* HomeModel.swift in Sources */,
 				10FF31DA2A19FE02001DF42C /* URLEncoder.swift in Sources */,
+				10F4ABE12A3470380008D051 /* HomeTableViewCell.swift in Sources */,
 				10FF31D52A19F94F001DF42C /* NetworkError.swift in Sources */,
+				10F4ABDD2A3464EA0008D051 /* Connection.swift in Sources */,
 				1017F8712A1B27C30071D9B1 /* ResponseData.swift in Sources */,
 				10FF31CD2A19F505001DF42C /* UIViewController+Addition.swift in Sources */,
 				10FF31C52A19ED28001DF42C /* HomeViewController.swift in Sources */,
+				10CAAFD32A3580A500161AD7 /* URLSession+Addition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +562,7 @@
 		};
 		10FF31AB2A19E519001DF42C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EC29684F8D9DF369C061C7 /* Pods-NetworkCallingNativeWay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +591,7 @@
 		};
 		10FF31AC2A19E519001DF42C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C678427032C64ADEE9E714 /* Pods-NetworkCallingNativeWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -12,10 +12,9 @@ struct UrlRequest {
                           headers: HTTPHeaders,
                           method: HTTPMethod,
                           encoding: URLEncoder ) throws -> URLRequest {
-        guard let url = URL(string: url) else {
-            fatalError("Error while unwrapping url")
-        }
-        var urlRequest = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 60.0)
+        guard let url = URL(string: url) else { fatalError("Error while unwrapping URL") }
+        // var urlRequest = URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData)
+        var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.value
         try configureParametersAndHeaders(&urlRequest, parameters, headers, encoding)
         return urlRequest

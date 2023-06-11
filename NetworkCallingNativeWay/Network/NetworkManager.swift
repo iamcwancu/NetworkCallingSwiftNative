@@ -15,14 +15,15 @@ struct NetworkManager {
                            header: HTTPHeaders = [:],
                            urlEncoder: URLEncoder = .urlEncoding,
                            completionHandler: @escaping completion<T>) where T: Codable {
+        let urlSession = URLSession.customConfiguration()
         do {
             // MARK: - Url request configure's -
             let urlRequest = try UrlRequest.configure(url: urlString,
-                                                      parameters: parameter,
-                                                      headers: header,
-                                                      method: httpMethod,
-                                                      encoding: urlEncoder)
-            URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+                                                                parameters: parameter,
+                                                                headers: header,
+                                                                method: httpMethod,
+                                                                encoding: urlEncoder)
+            urlSession.dataTask(with: urlRequest) { data, response, error in
                 // MARK: - Unwrapped response all data -
                 switch Unwrapped.response(data, response, error) {
                         /// if `unwrapped` return success
@@ -30,7 +31,8 @@ struct NetworkManager {
                         // MARK: - HTTP network response handler -
                         switch HttpNetworkResponse.handler(response) {
                                 /// `HttpNetworkResponse` return success
-                            case .success(_):
+                            case .success(let allHeaders):
+                                NetworkLogger.header(dict: allHeaders)
                                 /// when `HttpNetworkResponse` return the success
                                 /// then decode the `data` as modelType
                                 // MARK: - Response `Data` decoding -
@@ -73,7 +75,9 @@ struct NetworkManager {
             
         } catch {
             ///  When`Url request configure's` failed then this catch block will be execute
-            completionHandler(.failure(NetworkError.error(error)))
+            DispatchQueue.main.async {
+                completionHandler(.failure(NetworkError.error(error)))
+            }
         }
     }
 }

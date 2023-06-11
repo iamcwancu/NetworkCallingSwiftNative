@@ -21,6 +21,7 @@ final class AppFlowConfigure {
         let navigationController = UINavigationController(rootViewController: homeViewController)
         /// Hiding the `navigationBar` for the `HomeViewController`
         navigationController.navigationBar.isHidden = true
+        /// Disabling the Pop Gesture navigation
         navigationController.interactivePopGestureRecognizer?.isEnabled = false
         /// configuring the `navigationController` as `rootViewController`
         sceneDelegate.window?.rootViewController = navigationController
