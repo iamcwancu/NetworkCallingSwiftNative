@@ -1,9 +1,7 @@
 //
 //  JsonRelated.swift
-//  FMCServices
 //
 //  Created by Shivanshu Verma on 29/04/24.
-//  Copyright © 2024 Shivanshu Verma. All rights reserved.
 //
 
 import Foundation
