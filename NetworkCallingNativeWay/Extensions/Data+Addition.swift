@@ -1,9 +1,7 @@
 //
 //  Data+Addition.swift
-//  FMCServices
 //
 //  Created by Shivanshu Verma on 15/05/24.
-//  Copyright © 2024 Shivanshu Verma. All rights reserved.
 //
 
 import Foundation
