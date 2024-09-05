@@ -86,6 +86,35 @@ extension Dictionary where Key == String, Value == Any {
         return try JSONDecoder().decode(T.self, from: data)
     }
 }
+
+/// Extension for Dictionary type providing methods to convert dictionaries to JSON data and JSON strings.
+extension Dictionary where Key == AnyHashable, Value == Any {
+    /// Converts the dictionary to a JSON string.
+    /// - Parameter outputFormatting: Options for writing the JSON string. Default value is `.prettyPrinted`.
+    /// - Returns: A JSON string representing the dictionary.
+    /// - Throws: An error if the JSON serialization fails or if the conversion to string fails.
+    func jsonString(_ outputFormatting: JSONSerialization.WritingOptions = .prettyPrinted) throws -> String {
+        let jsonData = try self.jsonData(outputFormatting)
+        guard let jsonString = String(data: jsonData, encoding: .utf8) else {
+            throw NSError(domain: "DictionaryExtension", code: 1, userInfo: [NSLocalizedDescriptionKey: "Unable to convert JSON data to string"])
+        }
+        return jsonString
+    }
+
+    /// Converts the dictionary to JSON data.
+    /// - Parameter outputFormatting: Options for writing the JSON data. Default value is `.prettyPrinted`.
+    /// - Returns: JSON data representing the dictionary.
+    /// - Throws: An error if the JSON serialization fails.
+    func jsonData(_ outputFormatting: JSONSerialization.WritingOptions = .prettyPrinted) throws -> Data {
+        return try JSONSerialization.data(withJSONObject: self, options: [outputFormatting, .sortedKeys])
+    }
+
+    func decode<T: Decodable>(_ type: T.Type) throws -> T {
+        let data = try self.jsonData()
+        return try JSONDecoder().decode(T.self, from: data)
+    }
+}
+
 extension String {
     /// Converts the JSON string representation to a dictionary.
     ///
